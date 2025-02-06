@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color:rgba(181, 175, 230, 0.384);">
+    <h1>It's me.</h1>
+    <p>When I'm texting with you and you didn't sent text me!</p>
+
+    <script>
+        function emoji(sw){
+            var pic;
+            if (sw==0){
+                pic="./image/8f5da1a7e7c95ab528aeb272ad570b39.gif"
+            }
+            else{
+                pic="./image/hum-mad-bunny.gif"
+            }
+            document.getElementById('myImage').src=pic;
+        }
+
+    </script>
+
+    <img id="myImage" src="./image/68747470733a2f2f7170682e6366322e71756f726163646e2e6e65742f6d61696e2d71696d672d6136646332366130386262313834633137366264343230643134393832396235.gif" width="200" height="200">
+
+    <p>
+        <button type="button" onclick="emoji(0)">With you</button>
+        <button type="button" onclick="emoji(1)">Without you</button>
+    </p>
+</body>
+</html>
